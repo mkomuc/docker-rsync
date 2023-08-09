@@ -23,7 +23,7 @@ whoami
 
 SSH_PRIVATE_KEY_FILE="${SSH_PRIVATE_KEY_FILE:-/secrets/private_key}"
 SSH_KNOWN_HOSTS_FILE="${SSH_KNOWN_HOSTS_FILE:-/config/known_hosts}"
-SSH_COMMAND="ssh"
+SSH_COMMAND="ssh ${SSH_OPTIONS}"
 
 ssh_private_key() {
     echo "$1" > /tmp/key
