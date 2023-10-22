@@ -43,4 +43,4 @@ jobs:
           context: .
           push: true
           tags: mkomuc/docker-rsync:latest
-        if: steps.check.outputs.needs-updating == 'true'
+#        if: steps.check.outputs.needs-updating == 'true'
