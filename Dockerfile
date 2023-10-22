@@ -9,5 +9,6 @@ COPY test /test
 RUN chmod ug+rwX /test
 
 RUN chmod g+=rw /etc/passwd
-USER 1001
+#USER 1001
+USER 0
 ENTRYPOINT [ "/entrypoint" ]
